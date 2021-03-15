@@ -8,8 +8,16 @@
       public $firstName;
       public $lastName;
 
-      public function setName($name){
+      public function setFirstName($name){
         $this->firstName = $name;
+      }
+
+      public function setLastName($name){
+        $this->lastName = $name;
+      }
+
+      public function getFullName(){
+          return "$this->firstName $this->lastName";
       }
       //This is a simple class example.
   }
@@ -19,4 +27,8 @@
   //Ex
 
   $NameOBJ = new Name; // NameOBJ is now an object.
+  $NameOBJ->setFirstName('Anderson');   
+  $NameOBJ->setLastName('Junior');
+
+  echo $NameOBJ->getFullName(); //Will print 'Junior';
 ?>
