@@ -6,5 +6,5 @@
 
     //Reference atribuition
     $b = &$a; //$a and $b will change togheter.
-    
+    echo $b;  
 ?>
